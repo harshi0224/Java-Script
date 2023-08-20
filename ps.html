@@ -1,0 +1,35 @@
+<html>
+<head></head>
+<body>
+   <script>
+var x=+prompt();
+var isPerfectSquare=false;
+for(var i=1;i<=x;i++){
+   if(x/i===i){
+      isPerfectSquare=true;
+      break;
+   }
+}
+if(isPerfectSquare==true){
+   console.log("Perfect Square");
+}
+else{
+   console.log("not perfect square")
+}
+</script>
+
+
+
+
+<div id="d1"></div>
+<script>
+   var d1=document.getElementById("d1");
+   var ul=document.createElement("ul");
+   var li=document.createElement("li");
+   ul.appendChild(li);
+   d1.appendChild(ul)
+</script>
+
+   
+</body>
+</html>

@@ -1,0 +1,243 @@
+ <html>
+    <head></head>
+    <body>
+        <script>
+    //Level-1
+        //1.
+            var ar=[23,34,54,0,4,7]
+            for(var i=0;i<=ar.length-1;i++)
+            {
+                console.log(ar[i])
+            }
+        //2.
+            var ar=[23,34,54,0,4,7]
+            for(var i=1;i<=ar.length-1;i++)
+            {
+                console.log(ar[i])
+            }
+        //3.
+            var ar=[23,34,54,0,4,7]
+            for(var i=0;i<=ar.length-2;i++)
+            {
+                console.log(ar[i])
+            }
+        //4.
+            var ar=[23,34,54,0,4,7]
+            for(var i=5;i<=ar.length-1&i>=0;i--)
+            {
+                console.log(ar[i])
+            }
+        //5.
+            var ar=[23,34,54,0,4,7]
+            for(var i=5;i<=ar.length-2&i>=0;i--)
+            {
+                console.log(ar[i])
+            }
+        //6.
+            var ar=[23,34,54,0,4,7]
+            for(var i=5;i<=ar.length-1&i>=1;i--)
+            {
+                console.log(ar[i])
+            }
+        //7.
+            var ar=[23,34,54,0,4,7]
+            for(var i=2;i<=ar.length-1;i++)
+            {
+                console.log(ar[i])
+            }
+        //8.
+            var ar=[23,34,54,0,4,7];
+            var j=20;
+            for(var i=0;i<=ar.length-1&ar[i]>j;i++)
+            {
+                console.log(ar[i])
+            }
+        //9.For the Given array: [23,34,54,10,4,7] print all the even numbers in an Array. Expected output: 34,54,10,4
+            var a = [23,34,54,10,4,7];
+            for(i=0;i<=a.length-1;i++){
+                if(a[i]%2==0){
+                    console.log(a[i]);
+                }
+            }
+        //For the Given array: [23,34,54,10,4,7] print all the odd numbers in an Array. Expected output: 23,7
+            var a = [23,34,54,10,4,7];
+            for(i=0;i<=a.length-1;i++){
+                if(a[i]%2!=0){
+                    console.log(a[i]);
+                }
+            }
+        //For the Given array: [23,-34,-54,10,-4,7] print all the positive numbers in an array. Expected output: 23,10,7
+            var a = [23,-34,-54,10,-4,7];
+            for(i=0;i<=a.length-1;i++){
+                if(a[i]>=0){
+                    console.log(a[i]);
+                }
+            }
+        //Print only the 2 digit numbers from an array
+            var a = [23,34,54,10,4,7];
+            for(i=0;i<=a.length-1;i++){
+                if(a[i]>9){
+                    console.log(a[i]);
+                }
+            }
+        //Print only multiples of 5 from an array
+            var a = [23,34,54,10,4,7];
+            for(i=0;i<=a.length-1;i++){
+                if(a[i]%5==0){
+                    console.log(a[i]);
+                }
+            }
+        //Print only multiples of 2 AND 3 from an array
+            var a = [23,34,54,10,4,7];
+            for(i=0;i<=a.length-1;i++){
+                if(a[i]%2==0 && a[i]%3==0){
+                    console.log(a[i]);
+                }
+            }
+        //Print only multiples of 3 OR 5 from an array
+            var a = [23,34,54,10,4,7];
+            for(i=0;i<=a.length-1;i++){
+                if(a[i]%3==0 || a[i]%5==0){
+                    console.log(a[i]);
+                }
+            }
+        //1.
+            var ar=[23,34,54,0,4,7];
+            ar.forEach(function(value,index,array){
+                console.log(value);
+            })
+           
+        //2.
+            var ar=[23,34,54,0,4,7];
+            var x=ar.slice(1)
+            console.log(x);
+        //3.
+            var ar=[23,34,54,0,4,7];
+            ar.pop()
+            console.log(ar);
+        //4.
+            var ar=[23,34,54,0,4,7];
+            ar.reverse()
+            console.log(ar)
+        //5.
+            var ar=[23,34,54,0,4,7];
+            ar.pop()
+            ar.reverse()
+           
+            console.log(ar);
+        //6.var ar=[23,34,54,0,4,7]
+     var c = ar.forEach(function(value, index,array){
+        if(index>0){
+            console.log(value)
+        }
+           
+    })
+//7.
+    var ar=[23,34,54,0,4,7]
+     var c = ar.forEach(function(value, index,array){
+        if(index<ar.length-1)
+        {
+            console.log(value)
+        }
+           
+    })
+    //8
+    var ar=[23,34,54,0,4,7]
+     var c = ar.forEach(function(value, index,array){
+        if(index>=ar.length-4)
+        {
+            console.log(value)
+        }
+           
+    })
+    //9
+    var ar=[23,34,54,0,4,7]
+    var a= 20
+     var c = ar.forEach(function(value, index,array){
+        if(value>a)
+        {
+            console.log(value)
+        }
+           
+    })
+    //10.
+
+    var ar=[23,34,54,0,4,7]
+    var a=2
+    var c = ar.forEach(function(value, index,array){
+        if(value%a==0)
+        {
+            console.log(value)
+        }
+           
+    })
+    //11.
+    var ar=[23,34,54,0,4,7]
+    var a=2
+    var c = ar.forEach(function(value, index,array){
+        if(value%a!=0)
+        {
+            console.log(value)
+        }
+           
+    })
+   //12. 
+    var ar=[23,-34,-54,10,-4,7]
+    var c = ar.forEach(function(value, index,array){
+        if(value>=0)
+        {
+            console.log(value)
+        }
+           
+    })
+    //13.
+    var ar=[23,34,54,0,4,7]
+    var c = ar.forEach(function(value, index,array){
+        if(value>=10)
+        {
+            if(value<=99){
+            console.log(value)
+        }
+        }
+           
+    })
+    //14
+    var ar=[23,34,54,0,4,7]
+    var a=5
+    var c = ar.forEach(function(value, index,array){
+        if(value%a==0)
+        {
+            console.log(value)
+        }
+           
+    })
+    //15
+    var ar=[23,6,0,4,7]
+    var a=2
+    var b=3
+    var c = ar.forEach(function(value, index,array){
+        if(value % a ==0 && value % b  ===0)
+        {
+            console.log(value)
+        }
+           
+    })
+    //16
+    var ar=[23,6,15,35,9,4,7]
+    var a=3
+    var b=5
+    var c = ar.forEach(function(value, index,array){
+        if(value % a ==0 || value % b  ===0)
+        {
+            console.log(value)
+        }
+           
+    })
+
+
+       
+
+            
+        </script>
+    </body>
+ </html>

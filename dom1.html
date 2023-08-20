@@ -1,0 +1,432 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"></head>
+    </head>
+    <body >
+        <button onclick="abc()">Add Text</button>
+        <div id="d1"></div>
+        <script>
+            function abc(){
+            var a=document.createElement("h1")
+              a.innerHTML="Welcome to a different world"
+              var y=document.getElementById("d1");
+               y.appendChild(a);
+             
+            }
+        </script>
+        <br>
+
+        <div style="border: 2px solid;width: 20%;height: 10%;" id="p"></div>
+        <br>
+
+    <button onclick="p()">red</button>
+    <button onclick="b()">green</button>
+    <button onclick="i()">blue</button>
+    <button onclick="j()">reset</button>
+    <script>
+      function p(){
+        var a=document.getElementById("p")
+        a.style.backgroundColor="red"
+      } 
+      function b(){
+        var b=document.getElementById("p")
+        b.style.backgroundColor="green"
+      }
+      function i(){
+        var c=document.getElementById("p")
+        c.style.backgroundColor="blue"
+      }  
+      function j(){
+        var d=document.getElementById("p")
+        d.style.backgroundColor="white"
+      }  
+    </script>
+    <h1 style="color: red;text-align: center;">Change button background color on click</h1>
+    <center><button  id="s" onclick="ab()">white</button></center><br><br>
+    <script>
+         var x=document.getElementById("s")
+       x.style.backgroundColor="white";
+       alert(x.style.backgroundColor)
+      function ab(){
+       if(x.style.backgroundColor==="white"){
+         x.innerHTML="green"
+        x.style.backgroundColor="green"
+        x.style.color="white"
+       }
+       else{
+         x.innerHTML="white"
+        x.style.backgroundColor="white"
+        x.style.color="black"
+       }
+       }
+
+        
+    </script>
+        <div  id="d4"  onclick="s()" style="border: 2px solid;width: 20%;height: 10%;"></div>
+        <script>
+        function s(){
+            var a=document.getElementById("d4")
+            a.style.backgroundColor="red"
+           
+        }
+        function s(){
+            var b=document.getElementById("d4")
+            b.style.backgroundColor="red"
+           
+        }
+        </script>
+
+    <br>
+    <h1 id="d5"><button  onclick="a(event)">text it</button></h1>
+    <script>
+        function a(e){
+            e.target.innerHTML=""
+            var a=document.getElementById("d5")
+            a.innerHTML="oops"
+
+        }
+    </script>
+        <button  onclick="c()">button</button>
+        <br>
+        <div id="d6"></div>
+        <script>
+            function c(){
+        var d6=document.getElementById("d6");
+        var a=document.createElement("table");
+        a.style.border="1px solid"
+        d6.appendChild(a);
+        var b=document.createElement("tr");
+        b.style.border="1px solid"
+        a.appendChild(b);
+        var c=document.createElement("th");
+        c.style.border="1px solid"
+        c.innerHTML="Name";
+        b.appendChild(c);
+        var d=document.createElement("th");
+        d.style.border="1px solid"
+        d.innerHTML="Age";
+        b.appendChild(d);
+        var e=document.createElement("th");
+        e.style.border="1px solid"
+        e.innerHTML="Gender";
+        b.appendChild(e);
+        var j=document.createElement("tr");
+        j.style.border="1px solid"
+        a.appendChild(j);
+        var h=document.createElement("td");
+        h.style.border="1px solid"
+        j.appendChild(h);
+        h.innerHTML="Reshma";
+        var i=document.createElement("td");
+        i.style.border="1px solid"
+        j.appendChild(i);
+        i.innerHTML="22";
+        var k=document.createElement("td");
+        k.style.border="1px solid"
+        j.appendChild(k);
+        k.innerHTML="Nellore";
+        var l=document.createElement("tr");
+        l.style.border="1px solid"
+        a.appendChild(l);
+        var m=document.createElement("td");
+        m.style.border="1px solid"
+        l.appendChild(m);
+        m.innerHTML="Bharathi";
+        var n=document.createElement("td");
+        n.style.border="1px solid"
+        l.appendChild(n);
+        n.innerHTML="22";
+        var o=document.createElement("td");
+        o.style.border="1px solid"
+        l.appendChild(o);
+        o.innerHTML="Hyd";
+        var z=document.getElementById("d6");
+        z.appendChild(a);
+    
+            }
+        </script>
+        <br>
+    <button onmouseover="b1()">script</button>
+    <script>
+        function b1(){
+            alert("hello")
+        }
+    </script>
+    <br>
+    <br>
+    <button onclick="d()">Decrement</button>
+    <span id="a5"></span>
+    <button onclick="e()">Increment</button>
+    <script>
+        var count=0
+        var a5=document.getElementById("a5")
+        a5.innerHTML=count
+        function d(){
+            count--
+            a5.innerHTML=count
+            
+        }
+        function e(){
+            count++
+            a5.innerHTML=count
+        }
+    </script>
+    <h1 style="color: red;text-align: center;">Toggle button to show true/false</h1>
+  <center> <button   id="a6" onclick ="k()" style="background-color: chocolate;">Toggle</button></center>
+  <div id="b1"></div>
+    <script>
+        function k(){
+            var a6=document.getElementById("a6")
+            var a=document.createElement("p")
+              a.innerHTML="true"
+              var y=document.getElementById("b1");
+               y.appendChild(a);
+        }
+    </script>
+    
+     <div id="dd" onclick="v()">
+
+     </div><br>
+     <button onclick="b()" id="df">Toggle</button>
+     <span id="ff"></span><br><br>
+     <button onclick="a()" id="gf">On</button>
+     <button onclick="d()">Like</button>
+     <span id="b"></span>
+     <button onclick="f()">Dislike</button>
+     <span id="d"></span>
+     <div id="hp">
+
+     </div>
+     <button onclick=" k()">Toggle</button> v
+    
+    
+    <script>
+         var x=document.getElementById('dd')
+        x.style.border='1px solid black'
+        x.style.width='10%'
+        x.style.height='10%'
+        x.style.backgroundColor='white'
+        function v(){
+            if(x.style.backgroundColor==='white'){
+                x.style.backgroundColor='green'
+            }else if(x.style.backgroundColor==='green'){
+                x.style.backgroundColor='blue'
+            }
+            else if(x.style.backgroundColor==='blue'){
+                x.style.backgroundColor='pink'
+            }
+            else if(x.style.backgroundColor==='pink'){
+                x.style.backgroundColor='grey'
+            }
+            else if(x.style.backgroundColor==='grey'){
+                x.style.backgroundColor='yellow'
+            }
+            else{
+                x.style.backgroundColor='red'
+            }
+           
+
+        }
+        //5
+        var y=document.getElementById('df')
+        y.style.backgroundColor='yellow'
+        count=true
+       
+        function b(){
+            var z=document.getElementById('ff')
+            z.innerHTML=count
+            if(z.innerHTML==='true'){
+                count=false;
+               
+            }
+            else{
+                count=true;
+            }
+        }
+        //6
+        function a(){
+            var y=document.getElementById('gf')
+           
+            if(y.innerHTML==='On'){
+                y.innerHTML='off'
+            }
+            else[
+                y.innerHTML='On'
+            ]
+           
+        }
+        //7
+        count=0
+        sum=0
+        var n=document.getElementById('b')
+        n.innerHTML=count
+        var m=document.getElementById('d')
+        m.innerHTML=sum
+        function d(){
+           count++
+           n.innerHTML=count
+        }
+       
+        function f(){
+           sum++
+           m.innerHTML=count
+        }
+        //9
+        var r=document.getElementById('resh')
+        r.style.border='1px solid black'
+        r.style.width='10%'
+        r.style.height='10%'
+        r.style.backgroundColor='white'
+        function k(){
+           
+            if(r.style.backgroundColor==='white'){
+                r.style.backgroundColor='yellow'
+            }
+            else if(r.style.backgroundColor==='yellow'){
+                r.style.backgroundColor='white'
+            }
+           
+
+        }  var f=document.createElement('img')
+        f.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacyyukK5FW4-wB19_IRkjKhc52CwranBVAQ&usqp=CAU'
+        f.style.width='100%'
+        f.style.height='100%'
+
+//10
+        var h=document.createElement('img')
+        h.src='https://media.istockphoto.com/id/1426044764/photo/3d-rendered-incandescent-light-bulb.jpg?s=612x612&w=0&k=20&c=pWa-4QCSLB8tNEjr6gkxT4qc4nUMtkYOkcKYtW7dBVc='
+        h.style.width='100%'
+        h.style.height='100%'
+       
+        var c=document.getElementById('bev')
+        c.style.border='1px solid black'
+        c.style.width='50%'
+        c.style.height='50%'
+       
+        e.target.innerHTML='on'
+       
+       
+        function jun(e){
+         
+          c.append(f)
+          if(e.target.innerHTML==='on'){
+            c.innerHTML=''
+            c.append(f)
+            e.target.innerHTML='off'
+          }
+         
+          else if( e.target.innerHTML==='off'){
+            c.innerHTML=''
+            c.append(h)
+            e.target.innerHTML='on'
+          }
+         
+
+        }
+    </script>
+    <!-- //11 -->
+    <img onclick="abc(event)" src="https://www.rd.com/wp-content/uploads/2020/01/GettyImages-1131335393-e1650030686687.jpg" style="height: 20%;" >
+    <img onclick="abc(event)" src="https://t3.ftcdn.net/jpg/00/20/13/60/360_F_20136083_gk0ppzak6UdK9PcDRgPdLjcuAdo7o1LK.jpg" style="height: 20%;">
+    <img onclick="abc(event)" src="https://media.sciencephoto.com/c0/06/94/98/c0069498-800px-wm.jpg" style="height: 20%;">
+    <center><img id="a1" src=""></center>
+    <script>
+         function abc(e){
+            var x=document.getElementById("a1")
+            x.src=e.target.src
+            x.style.height="20%"
+         }
+    </script>
+    <!-- 12 -->
+    <img name="image" src="https://www.rd.com/wp-content/uploads/2020/01/GettyImages-1131335393-e1650030686687.jpg" style="height: 20%;" >
+    <img name="image" src="https://t3.ftcdn.net/jpg/00/20/13/60/360_F_20136083_gk0ppzak6UdK9PcDRgPdLjcuAdo7o1LK.jpg" style="height: 20%;">
+    <img name="image" src="https://media.sciencephoto.com/c0/06/94/98/c0069498-800px-wm.jpg" style="height: 20%;">
+    <img id="img" src="">
+    <button>Prev</button>
+    <button>Next</button>
+    <script>
+    var ar=["a","b","c"]
+    var i=0;
+   var image=document.getElementById("img")
+   function next(){
+    if(i=ar.length-1){
+        i=0;
+
+    }
+    else{
+        i++;
+        image.src=ar[i]
+    }
+   }
+   function prev(){
+    if(i===0){
+       i= ar.length-1;
+       image.src=ar
+
+    }
+    else{
+        i--;
+        image.src=ar[i]
+    }
+   }
+   
+   
+</script>
+<br> <br><br><br><br><br>
+<!-- 13 -->
+    <span class="bi" id="0" onclick="abc(event)"></span>
+    <span class="bi" id="1" onclick="abc(event)"></span>
+    <span class="bi" id="2" onclick="abc(event)"></span>
+    <span class="bi" id="3" onclick="abc(event)"></span>
+    <span class="bi" id="4" onclick="abc(event)"></span>
+    <script>
+        var x=document.getElementsByClassName("bi");
+        for(var i=0;i<x.length;i++)
+        {
+          x[i].classList.add("bi-star")
+        }
+        function abc(e){
+          for(var j=0;j<x.length;j++)
+        {
+          if(j<=e.target.id){
+            x[j].classList.remove("bi-star")
+            x[j].classList.add("bi-star-fill")
+          }
+          else{
+            x[j].classList.remove("bi-star-fill")
+            x[j].classList.add("bi-star")
+          }
+          
+        }
+  
+  
+        }
+      </script>
+      <br><br><br><br><br><br>
+      <!-- 15 -->
+      <input type="text" id="fg">
+        <button onclick="dfg(event)">Add student</button>
+        <ul id="ll">
+
+        </ul>
+        <script>
+         var l=document.getElementById('ll')
+         var g=document.getElementById('fg')
+        var i=0
+         var ar=[]
+         function dfg(e){
+            
+            ar[i]=g.value
+            i++
+           l.innerHTML=""
+
+            ar.forEach(function(value){
+                var k=document.createElement('li')
+               k.innerHTML=value
+               l.appendChild(k)
+            })
+           
+         }
+        </script>
+        
+    </body>
+</html>

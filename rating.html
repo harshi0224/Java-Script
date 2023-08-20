@@ -1,0 +1,54 @@
+<html>
+<head></head>
+<body>
+  <script>
+const gameBoard = {
+  4: 14,  // Snake from 4 to 14
+  9: 31,  // Ladder from 9 to 31
+  17: 7,  // Snake from 17 to 7
+  20: 38, // Ladder from 20 to 38
+  28: 84, // Ladder from 28 to 84
+  40: 59, // Ladder from 40 to 59
+  51: 67, // Ladder from 51 to 67
+  63: 81, // Ladder from 63 to 81
+  64: 60, // Snake from 64 to 60
+  89: 26, // Snake from 89 to 26
+  95: 75, // Snake from 95 to 75
+  99: 78  // Snake from 99 to 78
+};
+
+// Initialize player position
+let playerPosition = 1;
+
+// Roll a die to get a random number between 1 and 6
+function rollDie() {
+  return Math.floor(Math.random() * 6) + 1;
+}
+
+// Move the player on the game board
+function movePlayer(roll) {
+  playerPosition += roll;
+  if (gameBoard[playerPosition]) {
+    playerPosition = gameBoard[playerPosition];
+  }
+}
+
+// Check if the player has won
+function hasPlayerWon() {
+  return playerPosition >= 100;
+}
+
+// Main game loop
+while (!hasPlayerWon()) {
+  const roll = rollDie();
+  console.log(`You rolled a ${roll}.`);
+  movePlayer(roll);
+  console.log(`Your new position is ${playerPosition}.`);
+
+  if (hasPlayerWon()) {
+    console.log("Congratulations, you've won!");
+  }
+}
+</script>
+</body>
+</html>

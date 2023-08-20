@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+      <input type="text" id="d2">
+     
+      <button onclick="abc()">add student</button>
+        <ul id="dd">
+           
+        </ul> 
+
+        <script>
+
+
+    ar=['apple','mango','banana','cherry','ball']
+
+    var x=document.getElementById('d2')
+    var y=document.getElementById('dd')
+    function abc(){
+        y.innerHTML=""
+        ar.forEach(function(value,index){
+            
+            if(x.value===value.slice(0,1)){
+                var b=document.createElement('li')
+                b.innerHTML=value
+                y.appendChild(b)
+            }
+            
+        })
+    }
+
+
+        </script>
+    </body>
+</html>
